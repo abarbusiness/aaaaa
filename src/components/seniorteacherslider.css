@@ -1,0 +1,274 @@
+.circular-slider-container {
+    background: #85e788; /* green */
+    padding: 32px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .slider-viewport {
+    width: 100vw;
+    max-width: 100vw;
+    overflow: hidden;
+    border-radius: 0;
+    margin: 0;
+    position: relative;
+  }
+  
+  .slider-track {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+  
+  .teacher-card {
+    width: 350px;
+    border-radius: 32px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .teacher-card-top {
+    background: radial-gradient(circle at 60% 30%, #ffe066 70%, #ffe066 100%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 170px;
+    position: relative;
+  }
+  
+  /* .teacher-avatar-circle {
+    background: #ffe066;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.11);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 35%);
+    bottom: 0;
+    z-index: 2;
+  } */
+  
+  .teacher-avatar-img {
+    width: 150px;
+    height: 150px;
+    /* border-radius: 50%; */
+    object-fit: cover;
+  }
+  
+  .teacher-card-bottom {
+    background: #232a3d;
+    padding: 80px 24px 32px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .teacher-name {
+    color: #e53935;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0 0 12px 0;
+    text-align: center;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  }
+  
+  .teacher-college, .teacher-degree {
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 0 0 6px 0;
+    text-align: center;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  }
+  
+  .teacher-degree {
+    margin-top: 14px;
+    font-weight: 500;
+  }
+  
+  /* Remove old .slider-card styles if present */
+  .slider-card {
+    display: none;
+  }
+  
+  .circular-card {
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08), 0 1.5px 6px rgba(234,88,12,0.14);
+    width: 210px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.3s;
+    margin-bottom: 1.2rem;
+    position: relative;
+  }
+  
+  .teacher-image {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ea580c;
+    margin-bottom: 0.7rem;
+  }
+  
+  .circular-card h3 {
+    margin: 0;
+    font-size: 1.18rem;
+    color: #ea580c;
+    font-weight: 700;
+  }
+  .teacher-subject {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #555;
+    margin: 0.2rem 0;
+  }
+  .teacher-bio {
+    font-size: 0.87rem;
+    color: #666;
+    text-align: center;
+    margin: 0 1rem;
+  }
+  .slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: none;
+    font-size: 1.7rem;
+    color: #ea580c;
+    cursor: pointer;
+    z-index: 2;
+    padding: 0.2rem 0.7rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(234,88,12,0.10);
+    transition: background 0.2s;
+  }
+  .slider-arrow.left {
+    left: -30px;
+  }
+  .slider-arrow.right {
+    right: -30px;
+  }
+  .slider-arrow:active {
+    background: #ffe8d9;
+  }
+  .slider-dots {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 32px;
+    margin: 0 auto;
+    z-index: 10;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #e5e5e5;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .dot.active {
+    background: #ea580c;
+  }
+  @media (max-width: 500px) {
+    .card__article {
+      width: 170px;
+    }
+    .card__img {
+      width: 70px;
+      height: 70px;
+    }
+    .card__shadow {
+      width: 50px;
+      height: 12px;
+    }
+  }
+  
+  /* --- New card styles for CircularTeacherSlider --- */
+  .card__article {
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    max-width: 100vw;
+    margin: 0;
+    position: relative;
+    transition: box-shadow 0.3s;
+  }
+  
+  .card__image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.1rem;
+  }
+  
+  .card__img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ea580c;
+    box-shadow: 0 4px 18px #ea580c22;
+    background: #fff;
+    z-index: 2;
+  }
+  
+  .card__shadow {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 18px;
+    background: rgba(234, 88, 12, 0.14);
+    border-radius: 50%;
+    filter: blur(2.5px);
+    z-index: 1;
+  }
+  
+  .card__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card__name {
+    font-size: 1.17rem;
+    font-weight: 700;
+    color: #ea580c;
+    margin: 0 0 0.25rem 0;
+  }
+  
+  .card__description {
+    font-size: 0.98rem;
+    color: #555;
+    margin: 0.13rem 0;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  /* Hide old styles for circular-card and teacher-image in this slider context */
+  .circular-card, .teacher-image, .teacher-subject, .teacher-bio {
+    display: none !important;
+  }
+  

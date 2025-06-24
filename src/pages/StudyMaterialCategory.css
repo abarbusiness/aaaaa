@@ -1,0 +1,111 @@
+.edurev-category-root {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #fff7ed 0%, #fff 60%, #fef3c7 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edurev-category-header {
+  width: 100vw;
+  max-width: 950px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 28px rgba(0,0,0,0.11);
+  padding: 40px 36px 30px 36px;
+  margin-top: 32px;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.edurev-category-header-content {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.edurev-category-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  background: #fff7ed;
+  box-shadow: 0 2px 10px #ea580c11;
+  margin-right: 18px;
+}
+
+.edurev-category-title {
+  font-size: 2.3rem;
+  font-weight: 900;
+  color: #ea580c;
+  margin-bottom: 8px;
+  letter-spacing: 0.7px;
+}
+
+.edurev-category-subtitle {
+  font-size: 1.16rem;
+  color: #f59e42;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 700px) {
+  .edurev-category-header-content {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .edurev-category-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
+  }
+  .edurev-category-title {
+    font-size: 1.5rem;
+  }
+}
+
+.subcategory-facets-diagram-multiline {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+}
+
+.subcategory-facets-row {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .subcategory-facets-row {
+    gap: 24px;
+  }
+  .subcategory-facets-diagram-multiline {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 900px) {
+  .subcategory-facets-row {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+}
+
+.loader-modern {
+  border: 6px solid #fff7ed;
+  border-top: 6px solid #ea580c;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

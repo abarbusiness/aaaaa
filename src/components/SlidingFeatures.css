@@ -1,0 +1,32 @@
+.sliding-features-outer {
+  width: 100vw;
+  overflow: hidden;
+  margin-top: 0.6em;
+  margin-bottom: 0.5em;
+  pointer-events: none;
+}
+
+.sliding-features-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #ea580c;
+  gap: 2.5rem;
+  padding: 0.2em 0;
+  animation: none;
+  letter-spacing: 0.01em;
+  user-select: none;
+}
+
+.sliding-feature-item {
+  display: inline-block;
+  padding: 0 0.4em;
+  background: linear-gradient(90deg,#fffbe6 60%,#fbbf24 100%);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #fbbf2433;
+  color: #ea580c;
+  margin-right: 0.5em;
+  white-space: nowrap;
+}

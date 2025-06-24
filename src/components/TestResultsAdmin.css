@@ -1,0 +1,199 @@
+.test-results-admin {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.error-message {
+  color: #ef4444;
+  background-color: #fee2e2;
+  padding: 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+h2 {
+  color: #1f2937;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  color: #374151;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #374151;
+}
+
+.form-group select,
+.form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+  background-color: white;
+}
+
+/* Ensure dropdown options are visible */
+.form-group select option {
+  color: #333 !important;
+  background-color: white !important;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Ensure placeholder text is visible */
+.form-group select option[value=""] {
+  color: #666 !important;
+  background-color: white !important;
+}
+
+/* Fix for dropdown visibility in Chrome */
+.form-group select option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: white !important;
+  color: #333 !important;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 0.25rem 0;
+}
+
+/* Fix for dropdown visibility in Firefox */
+.form-group select option::-moz-selection {
+  background-color: white !important;
+  color: #333 !important;
+}
+
+/* Fix for dropdown visibility in Chrome */
+.form-group select option::selection {
+  background-color: white !important;
+  color: #333 !important;
+}
+
+/* Fix for dropdown visibility in IE/Edge */
+.form-group select option::-ms-value {
+  background-color: white !important;
+  color: #333 !important;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.subjects-container {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+.subject-group {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: white;
+}
+
+.percentage-display {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #10b981;
+  font-weight: 500;
+}
+
+.add-subject,
+.remove-subject {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.add-subject {
+  background: #3b82f6;
+  color: black;
+}
+
+.remove-subject {
+  background: #ef4444;
+  color: white;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  justify-content: flex-end;
+}
+
+.button-group button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  min-width: 120px;
+}
+
+.button-group button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.button-group button[type="button"] {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.button-group button[type="button"]:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+@media (max-width: 640px) {
+  .test-results-admin {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+}

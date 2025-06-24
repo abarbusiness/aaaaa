@@ -1,0 +1,124 @@
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
+
+.study-resources-section {
+  background: none;
+  padding: 56px 0 32px 0;
+  text-align: center;
+}
+.study-resources-title {
+  color: #EA1900;
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #18181b;
+  margin-bottom: 12px;
+}
+.study-resources-subtitle {
+  color: #52525b;
+  font-size: 1.13rem;
+  margin-bottom: 32px;
+}
+.study-resources-grid {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+  .study-resources-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .study-resource-card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+    max-width: 340px;
+    align-items: center;
+    text-align: center;
+  }
+}
+.study-resource-card {
+  background: #f9fafb;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  box-shadow: 0 2px 10px #ea580c11;
+  border-radius: 18px;
+  padding: 32px 28px 24px 28px;
+  min-width: 260px;
+  max-width: 320px;
+  min-height: 270px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.16s, transform 0.13s;
+  margin-bottom: 18px;
+}
+.study-resource-card:hover {
+  box-shadow: 0 6px 24px #ea580c22;
+  transform: translateY(-3px) scale(1.04);
+}
+.study-resource-card.notes {
+  border-left: 4px solid #fbbf24;
+  background: linear-gradient(120deg, #fffbe8 70%, #fbbf2422 100%);
+}
+.study-resource-card.books {
+  border-left: 4px solid #38bdf8;
+  background: linear-gradient(120deg, #f0f9ff 70%, #38bdf822 100%);
+}
+.study-resource-card.ncert {
+  border-left: 4px solid #fb7185;
+  background: linear-gradient(120deg, #fff0f6 70%, #fb718522 100%);
+}
+.resource-card-arrow {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-12px);
+  font-size: 2.1rem;
+  color: #ea580c;
+  font-weight: 900;
+  position: absolute;
+  right: 24px;
+  bottom: 28px;
+  transition: opacity 0.25s cubic-bezier(.4,0,.2,1), transform 0.25s cubic-bezier(.4,0,.2,1);
+}
+.study-resource-card:hover .resource-card-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+@media (max-width: 600px) {
+  .resource-card-arrow {
+    opacity: 1 !important;
+    transform: none !important;
+    display: inline-block !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+}
+.resource-card-header {
+  color: #EA1900 !important;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #18181b;
+  margin-bottom: 10px;
+}
+.resource-card-desc {
+  color: #52525b;
+  font-size: 1.02rem;
+  margin-bottom: 24px;
+}
+.resource-card-illustration {
+  margin-top: auto;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}

@@ -1,0 +1,8 @@
+/* Mobile scroll fix for Vardaan Landing Page */
+@media (max-width: 600px) {
+  html, body, .landing-root {
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    overscroll-behavior-y: contain;
+  }
+}

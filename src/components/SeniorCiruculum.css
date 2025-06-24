@@ -1,0 +1,140 @@
+.curriculum-slider-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .card__container {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .card__article {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  @media screen and (max-width: 600px) {
+      .slider-wrapper {
+        max-width: 100vw;
+        padding: 1rem 0.5rem;
+      }
+      .card__article {
+        max-width: 98vw;
+        width: 98vw;
+      }
+    }
+  
+  .fade-text {
+    animation: fadeIn 0.5s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Modern Slide Animations */
+  .slide-in-right {
+    animation: slideInFromRight 0.48s cubic-bezier(0.4,0,0.2,1) forwards, fadeScaleIn 0.48s cubic-bezier(0.4,0,0.2,1) forwards;
+    z-index: 2;
+  }
+  .slide-in-left {
+    animation: slideInFromLeft 0.48s cubic-bezier(0.4,0,0.2,1) forwards, fadeScaleIn 0.48s cubic-bezier(0.4,0,0.2,1) forwards;
+    z-index: 2;
+  }
+  .slide-out-right {
+    animation: slideOutToRight 0.48s cubic-bezier(0.4,0,0.2,1) forwards, fadeScaleOut 0.48s cubic-bezier(0.4,0,0.2,1) forwards;
+    z-index: 1;
+  }
+  .slide-out-left {
+    animation: slideOutToLeft 0.48s cubic-bezier(0.4,0,0.2,1) forwards, fadeScaleOut 0.48s cubic-bezier(0.4,0,0.2,1) forwards;
+    z-index: 1;
+  }
+  @keyframes slideInFromRight {
+    from {
+      opacity: 0.6;
+      transform: translateX(80%) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+    }
+  }
+  @keyframes slideInFromLeft {
+    from {
+      opacity: 0.6;
+      transform: translateX(-80%) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+    }
+  }
+  @keyframes slideOutToLeft {
+    from {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+    }
+    to {
+      opacity: 0.6;
+      transform: translateX(-80%) scale(0.95);
+    }
+  }
+  @keyframes slideOutToRight {
+    from {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+    }
+    to {
+      opacity: 0.6;
+      transform: translateX(80%) scale(0.95);
+    }
+  }
+  @keyframes fadeScaleIn {
+    from {
+      opacity: 0.7;
+      scale: 0.98;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+  @keyframes fadeScaleOut {
+    from {
+      opacity: 1;
+      scale: 1;
+    }
+    to {
+      opacity: 0.7;
+      scale: 0.98;
+    }
+  }
+  
+  /* Slider Dots - Circular Orange */
+  .slider-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #ffd699; /* light orange */
+    border: none;
+    outline: none;
+    transition: background 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    box-shadow: none;
+    margin: 0 3px;
+    padding: 0;
+  }
+  .slider-dot--active {
+    background: #ef1900; /* deep orange */
+    box-shadow: 0 0 0 1px #ef1900;
+  }

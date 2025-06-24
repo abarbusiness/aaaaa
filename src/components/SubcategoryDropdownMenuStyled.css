@@ -1,0 +1,180 @@
+/* Modern, attractive dropdown menu for subcategories */
+
+.subcat-dropdown-root {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 24px;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+.subcat-dropdown-item {
+  margin-bottom: 28px;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px #ea580c18;
+  background: #fff;
+  border: 2px solid #fbbf24;
+  transition: background 0.22s, box-shadow 0.22s, border 0.22s;
+  overflow: hidden;
+}
+
+.subcat-dropdown-item.open {
+  background: linear-gradient(120deg, #fff7ed 0%, #fffbe5 100%);
+  box-shadow: 0 6px 24px #fbbf2433, 0 1.5px 8px #fbbf2410;
+  border: 2.5px solid #ea580c;
+}
+
+.subcat-dropdown-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 32px;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 1.22rem;
+  color: #ea580c;
+  border-radius: 18px;
+  background: transparent;
+  transition: background 0.18s, box-shadow 0.18s;
+  position: relative;
+}
+
+.subcat-dropdown-header .subcat-number {
+  font-weight: 900;
+  font-size: 26px;
+  color: #b45309;
+  margin-right: 12px;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 0 #fff7ed;
+}
+
+.subcat-dropdown-header .subcat-img {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  object-fit: cover;
+  background: #fff7ed;
+  border: 2px solid #fbbf24;
+  margin-right: 16px;
+}
+
+.subcat-dropdown-header .subcat-title {
+  font-size: 1.18rem;
+  font-weight: 900;
+  margin-right: 18px;
+}
+
+.subcat-dropdown-header .subcat-summary {
+  font-weight: 600;
+  color: #b45309;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.subcat-dropdown-header .subcat-arrow {
+  font-size: 26px;
+  color: #fb923c;
+  margin-left: 18px;
+  transition: transform 0.22s;
+}
+
+.subcat-dropdown-header .subcat-arrow.open {
+  transform: rotate(180deg);
+}
+
+.subcat-dropdown-articles {
+  padding: 0 32px 18px 32px;
+  background: #fffbe5;
+  border-top: 1.5px solid #fbbf24;
+  animation: fadeIn 0.32s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.subcat-dropdown-article-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.subcat-dropdown-article {
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border-bottom: 1px solid #f3f3f3;
+  padding-bottom: 10px;
+  transition: background 0.14s;
+  border-radius: 8px;
+}
+
+.subcat-dropdown-article:hover {
+  background: #fff7ed;
+}
+
+.subcat-dropdown-article .article-img {
+  width: 38px;
+  height: 38px;
+  border-radius: 7px;
+  object-fit: cover;
+  background: #fff7ed;
+  border: 1.5px solid #fbbf24;
+}
+
+.subcat-dropdown-article .article-title {
+  font-weight: 700;
+  color: #ea580c;
+  font-size: 1.08rem;
+}
+
+.subcat-dropdown-article .article-type {
+  border-radius: 8px;
+  padding: 2px 10px;
+  font-weight: 700;
+  font-size: 13px;
+  margin-left: 6px;
+}
+
+.subcat-dropdown-article .article-type.video {
+  background: #fbbf24;
+  color: #fff;
+}
+.subcat-dropdown-article .article-type.doc {
+  background: #ea580c;
+  color: #fff;
+}
+.subcat-dropdown-article .article-type.test {
+  background: #22c55e;
+  color: #fff;
+}
+.subcat-dropdown-article .article-type.default {
+  background: #e5e7eb;
+  color: #18181b;
+}
+
+.subcat-dropdown-article .article-pages {
+  color: #f59e42;
+  font-size: 0.98rem;
+  margin-left: 6px;
+}
+
+.subcat-dropdown-article .article-link {
+  color: #3b82f6;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: underline;
+  margin-left: 10px;
+  transition: color 0.14s;
+}
+
+.subcat-dropdown-article .article-link:hover {
+  color: #ea580c;
+}
+
+/* Add subtle hover effects, shadows, and gradients for wow factor */

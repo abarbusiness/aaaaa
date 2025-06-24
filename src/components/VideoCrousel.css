@@ -1,0 +1,105 @@
+/* Make the VideoCrousel component full width on desktop */
+:root {
+  padding-right: 20px;
+}
+.video-crousel-full-width {
+  position: relative;
+  width: 100vw;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+.video-crousel-inner {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 32px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .video-crousel-inner {
+    padding-left: 16px;
+    padding-right: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-crousel-full-width {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+.video-crousel-full-width .video-swiper-full-width,
+.video-crousel-full-width .swiper,
+.video-crousel-full-width .swiper-wrapper,
+.video-crousel-full-width .swiper-slide {
+  width: 100% !important;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.video-crousel-full-width .video-slide-full-width,
+.video-crousel-full-width .video-slide-full-width img,
+.video-crousel-full-width .video-slide-full-width video {
+  width: 100% !important;
+  max-width: 100%;
+  min-width: 0;
+  height: auto !important;
+  max-height: 600px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .video-crousel-full-width .video-slide-full-width,
+  .video-crousel-full-width .video-slide-full-width img,
+  .video-crousel-full-width .video-slide-full-width video {
+    max-height: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-crousel-full-width .video-slide-full-width,
+  .video-crousel-full-width .video-slide-full-width img,
+  .video-crousel-full-width .video-slide-full-width video {
+    height: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-crousel-full-width .video-slide-full-width,
+  .video-crousel-full-width .video-slide-full-width img,
+  .video-crousel-full-width .video-slide-full-width video {
+    height: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-crousel-full-width {
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+  .video-swiper-full-width,
+  .swiper,
+  .swiper-wrapper,
+  .swiper-slide {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    min-width: 100vw !important;
+  }
+  .video-slide-full-width,
+  .video-slide-full-width img,
+  .video-slide-full-width video {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    min-width: 100vw !important;
+    height: 220px;
+  }
+}
