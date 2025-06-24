@@ -14,7 +14,7 @@ const CategoryPage = React.lazy(() => import('./pages/CategoryPage'));
 const SubcategoryPage = React.lazy(() => import('./pages/SubcategoryPage'));
 const SubcategoryListPage = React.lazy(() => import('./pages/SubcategoryListPage'));
 const Login = React.lazy(() => import('./pages/login'));
-const Admin = React.lazy(() => import('./pages/admin'));
+const Admin = React.lazy(() => import('./pages/Admin'));
 const Dashboard = React.lazy(() => import('./pages/Dashboard'));
 import TestPaper from './pages/TestPaper';
 import BookSolutions from './pages/BookSolutions';
@@ -107,6 +107,9 @@ import Class12icseMathematics from './studymaterial/Class12icseMathematics';
 import Class12icseSocialScience from './studymaterial/Class12icseSocialScience';
 import Class12icseEnglish from './studymaterial/Class12icseEnglish';
 import Class12icseEnglishGrammar from './studymaterial/Class12icseEnglishGrammar';
+
+
+
 
 const AdminDashboard = React.lazy(() => import('./pages/admindashboard'));
 const NotFound = React.lazy(() => import('./pages/NotFound'));
