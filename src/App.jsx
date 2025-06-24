@@ -14,7 +14,7 @@ const CategoryPage = React.lazy(() => import('./pages/CategoryPage'));
 const SubcategoryPage = React.lazy(() => import('./pages/SubcategoryPage'));
 const SubcategoryListPage = React.lazy(() => import('./pages/SubcategoryListPage'));
 const Login = React.lazy(() => import('./pages/Login.jsx'));
-const Admin = React.lazy(() => import('./pages/admin'));
+const Admin = React.lazy(() => import('./pages/Admin.jsx'));
 const Dashboard = React.lazy(() => import('./pages/Dashboard'));
 import TestPaper from './pages/TestPaper';
 import BookSolutions from './pages/BookSolutions';
