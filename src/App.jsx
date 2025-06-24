@@ -13,7 +13,7 @@ const ArticlePage = React.lazy(() => import('./pages/ArticlePage'));
 const CategoryPage = React.lazy(() => import('./pages/CategoryPage'));
 const SubcategoryPage = React.lazy(() => import('./pages/SubcategoryPage'));
 const SubcategoryListPage = React.lazy(() => import('./pages/SubcategoryListPage'));
-const Login = React.lazy(() => import('./pages/login'));
+const Login = React.lazy(() => import('./pages/Login'));
 const Admin = React.lazy(() => import('./pages/Admin'));
 const Dashboard = React.lazy(() => import('./pages/Dashboard'));
 import TestPaper from './pages/TestPaper';
@@ -347,7 +347,7 @@ function App() {
           <Route path="/book-solutions" element={<BookSolutions />} />
           <Route path="/ncertbooks" element={<NcertBooks />} />
           <Route path="/syllabus" element={<Syllabus />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/Login" element={<Login />} />
           <Route path="/register" element={<RegisterStudent />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/dashboard" element={<Dashboard />} />
